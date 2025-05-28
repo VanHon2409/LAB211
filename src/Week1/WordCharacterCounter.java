@@ -18,6 +18,7 @@ public class WordCharacterCounter {
         this.input = input;
     }
 
+
     Map<String, Integer> countWords() {
         Map<String, Integer> wordcount = new HashMap<>();
         String[] words = input.toLowerCase().split("\\s+");

@@ -12,18 +12,21 @@ import java.util.Random;
  */
 public class LinearSearch {
     private int[] array;
-    
 
     public LinearSearch(int n) {
-        this.array = new int[n];
+        this.array = new int [n];
     }
+    
 
-    void addValue(int x) {
-        Random rd = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = rd.nextInt(array.length);
+   
+
+    void addValue(int x) { // o day khai bao bien x vi muc dich chinh la gan gia tri ngau nhien cho tung phan tu trong array
+        Random rd = new Random() ;//tao doi tuong random
+        for (int i=0 ; i<array.length;i++){//duyet qua tung vi tri trong man
+            array[i] = rd.nextInt(array.length);//sinh ra cac so ngau nhien tu 0-9 vao cac o tu 0-array[i]
         }
-
+        
+        
     }
 
     void showArray() {
